@@ -1,13 +1,5 @@
 /*
 
-@Author: Themezinho
-@URL: http://www.themezinho.net
- 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
-
-
 // Table of contents //
 
 	01.	GOOGLE FONTS
@@ -65,7 +57,7 @@ theme.
 @mixin blur{ -webkit-filter: blur(25px); -moz-filter: blur(25px); -o-filter: blur(25px); -ms-filter: blur(25px); filter: blur(25px);}
 @mixin no-blur{ -webkit-filter: blur(0); -moz-filter: blur(0); -o-filter: blur(0); -ms-filter: blur(0); filter: blur(0);}
 
-$color-dark :#0e0e0e;
+$color-dark :#151010;
 $color-red :#e8293b;
 $color-turquaz :#01f7b6;
 

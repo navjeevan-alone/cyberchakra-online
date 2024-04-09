@@ -50,9 +50,9 @@
       function () {
         audio.play();
       },
-      true
+      false
     );
-    audio.src = source;
+    // audio.src = source;
     audio.autoplay = true;
     audio.loop = true;
     audio.volume = 0.2;
@@ -72,7 +72,7 @@
     // EQUALIZER
     function randomBetween(range) {
       var min = range[0],
-        max = range[1];
+      max = range[1];
       if (min < 0) {
         return min + Math.random() * (Math.abs(min) + max);
       } else {
@@ -82,6 +82,7 @@
 
     $.fn.equalizerAnimation = function (speed, barsHeight) {
       var $equalizer = $(this);
+      console.log(barsHeight);
       setInterval(function () {
         $equalizer.find("span").each(function (i) {
           $(this).css({ height: randomBetween(barsHeight[i]) + "px" });
