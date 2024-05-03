@@ -210,7 +210,7 @@
         <!-- end row -->
         <div class="row align-items-center">
           <div class="col-lg-6 wow fadeIn">
-            <img src="./images/vortex.jpg" alt="">
+            <img src="./images/vortex.jpg" alt="" />
             <!-- end map -->
           </div>
           <!-- end col-6 -->
@@ -233,6 +233,7 @@
                   type="text"
                   name="entry.1045781291"
                   id="email"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                   required />
               </div>
               <!-- end form-group -->
@@ -242,6 +243,7 @@
                   type="text"
                   name="entry.1065046570"
                   id="github"
+                  pattern="^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_-]+$"
                   required />
               </div>
 
@@ -252,21 +254,25 @@
                   type="text"
                   name="entry.1126219209"
                   id="linkedin"
+                  pattern="^(https?:\/\/)?(www\.)?linkedin\.com\/in\/[a-zA-Z0-9_-]+$"
                   required />
               </div>
               <!-- end form-group -->
-              <!-- <div class="form-group col-sm-6 col-12">
-                <label><span>Resume</span></label>
+              <div class="form-group col-sm-12 col-12">
+                <label><span>Resume link</span></label>
                 <input
-                  type="file"
+                  type="text"
                   name="entry.1166974658"
                   id="resume"
                   required />
-              </div> -->
+              </div>
               <!-- end form-group -->
               <div class="form-group col-12">
                 <label><span>Your message</span></label>
-                <textarea name="entry.839337160" id="message" required></textarea>
+                <textarea
+                  name="entry.839337160"
+                  id="message" 
+                  required></textarea>
               </div>
               <!-- end form-group -->
               <div class="form-group col-12">
